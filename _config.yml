@@ -1,53 +1,71 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Business Jekyll Theme
-email: your-email@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Yet another Jekyll theme. It is designed for business purpose and ported by 
-  Melvin Ch'ng.
+title: IPTV技术文章
+brief-intro: Back-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://freeiptvcn.github.io" # the base hostname & protocol for your site
 
-# Company Information
-company_name: Johns, Smith & Associates
-address_line: Via Ludovisi 39-45, Rome, 54267, Italy
-telephone_number: 1.800.245.356
-fax_number: 1.800.245.357
-company_email: hello@LawOffice.org
-google_map: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3618.727010735933!2d91.837871!3d24.907291700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1404919738144
+permalink: /:year/:month/:day/:title/
 
-# Social Link
-facebook_link: http://www.facebook.com
-twitter_link: http://www.twitter.com
-linkedin_link: http://www.linkedin.com
-googleplus_link: http://plus.google.com
+# other links
+#twitter_username: likonion
+#facebook_username:
+github_username: freeiptvcn
+email: freeiptvcn@gmail.com
+#weibo_username:
+#zhihu_username:
+#linkedIn_username:
+#dribbble_username:
 
+description_footer: IPTV技术文章！
+
+# comments
+# two ways to comment, only choose one, and use your own short name
+# 两种评论插件，选一个就好了，使用自己的 short_name
+disqus_shortname: lizhiyong2000
+#gitment:
+    #owner: likonion
+    #repo: blog-comment
+    #oauth:
+        #client_id: e8a59aafd9ef5ed8c771
+        #client_secret: 85e7a933a5d407259cd16545fa4f9af716025254
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+baidu_tongji_id: 948d11deaeb457024220d61b87dc7493
+google_analytics_id: UA-131166391-1
+
+sass_dir: assets/_sass
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# port
+# port: 1234
+
+# url
+category_dir: category/
+tag_dir: tag/
+
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
+plugins:
+    - jekyll-paginate
+paginate: 6
+
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
