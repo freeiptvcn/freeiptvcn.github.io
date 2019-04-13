@@ -126,7 +126,7 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background: url("../image/media/head.jpg") no-repeat;
+    background: url("../assets/image/media/head.jpg") no-repeat;
     background-size: 40px; }
   header .wrapper {
     width: 1140px;
