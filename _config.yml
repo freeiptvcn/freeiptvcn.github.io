@@ -7,7 +7,6 @@
 
 # Site settings
 title: IPTV技术文章
-brief-intro: Back-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://freeiptvcn.github.io" # the base hostname & protocol for your site
 
@@ -42,7 +41,7 @@ disqus_shortname: lizhiyong2000
 baidu_tongji_id: 948d11deaeb457024220d61b87dc7493
 google_analytics_id: UA-131166391-1
 
-sass_dir: assets/_sass
+# sass_dir: assets/_sass
 # Build settings
 markdown: kramdown
 highlighter: rouge
