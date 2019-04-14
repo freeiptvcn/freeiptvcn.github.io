@@ -6,16 +6,23 @@
         <nav id="headerNav">
             <ul>
                 <li>
+
+                    <a href="http://freeiptv.cn/">
+                        首页
+                    </a>
+                </li>
+
+                <li>
                     {% if page.url == '/' %}
                     <a class="active" href="{{site.baseurl}}/">
                         {% else %}
                     <a href="{{site.baseurl}}/">
                     {% endif %}
-                        首页
+                        文章
                     </a>
                 </li>
 
-                {% for my_page in site.pages %}
+                <!-- {% for my_page in site.pages %}
                     {% if my_page.type == 'page' %}
                     <li>
                         {% if my_page.url == page.url %}
@@ -27,7 +34,7 @@
                         </a>
                     </li>
                     {% endif %}
-                {% endfor %}
+                {% endfor %} -->
             </ul>
         </nav>
     </div>
