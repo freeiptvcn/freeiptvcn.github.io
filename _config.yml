@@ -8,7 +8,9 @@
 # Site settings
 title: IPTV技术文章
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://freeiptv.cn/blog/" # the base hostname & protocol for your site
+url: "http://www.freeiptv.cn/blog/" # the base hostname & protocol for your site
+originurl: "http://freeiptvcn.github.io/"
+
 
 permalink: /:year/:month/:day/:title/
 
